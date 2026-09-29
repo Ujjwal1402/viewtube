@@ -1,0 +1,78 @@
+{
+  "categories": [
+    { "id": "cat-all", "name": "All", "slug": "all", "display_order": 0 },
+    { "id": "cat-live", "name": "Live Now", "slug": "live-now", "display_order": 1 },
+    { "id": "cat-tech", "name": "Technology", "slug": "technology", "display_order": 2 },
+    { "id": "cat-anim", "name": "Animation", "slug": "animation", "display_order": 3 },
+    { "id": "cat-music", "name": "Music", "slug": "music", "display_order": 4 },
+    { "id": "cat-scifi", "name": "Sci-Fi", "slug": "sci-fi", "display_order": 5 },
+    { "id": "cat-travel", "name": "Travel", "slug": "travel", "display_order": 6 },
+    { "id": "cat-gaming", "name": "Gaming", "slug": "gaming", "display_order": 7 }
+  ],
+  "users": [
+    {
+      "id": "user-current",
+      "name": "Alex Rivera",
+      "handle": "@alexrivera_studio",
+      "email": "alex@viewtube.io",
+      "bio": "Content creator, 3D animator & tech enthusiast. Creating and streaming weekly! 🚀",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "bannerUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80",
+      "subscribersCount": 14200,
+      "subscribedChannelIds": ["ch-blender", "ch-lofi", "ch-spacex"],
+      "likedVideoIds": ["vid-1", "vid-live-1"],
+      "dislikedVideoIds": [],
+      "watchLaterIds": ["vid-2", "vid-3"],
+      "historyVideoIds": ["vid-1", "vid-live-1", "vid-4"]
+    },
+    {
+      "id": "user-sarah",
+      "name": "Sarah Connor",
+      "handle": "@sarah_explores",
+      "email": "sarah@viewtube.io",
+      "bio": "Digital nomad, coffee connoisseur, and space science geek ☕🌌",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "bannerUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      "subscribersCount": 8900,
+      "subscribedChannelIds": ["ch-lofi", "ch-spacex"],
+      "likedVideoIds": ["vid-live-1"],
+      "dislikedVideoIds": [],
+      "watchLaterIds": ["vid-1"],
+      "historyVideoIds": ["vid-live-2"]
+    }
+  ],
+  "channels": [
+    {
+      "id": "ch-blender",
+      "name": "Blender Open Movies",
+      "handle": "@blender_studio",
+      "avatarUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+      "verified": true,
+      "subscribers": 1840000
+    },
+    {
+      "id": "ch-scifi",
+      "name": "SciFi Vault",
+      "handle": "@scifi_vault",
+      "avatarUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "verified": true,
+      "subscribers": 950000
+    },
+    {
+      "id": "ch-lofi",
+      "name": "Lofi Girl Café",
+      "handle": "@lofi_cafe",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "verified": true,
+      "subscribers": 14200000
+    },
+    {
+      "id": "ch-spacex",
+      "name": "Space Exploration Archive",
+      "handle": "@space_archive",
+      "avatarUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+      "verified": true,
+      "subscribers": 3100000
+    }
+  ]
+}

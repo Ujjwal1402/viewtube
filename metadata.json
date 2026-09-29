@@ -1,0 +1,6 @@
+{
+  "name": "ViewTube - Video & Live Stream Platform",
+  "description": "YouTube clone with user video uploads, live streaming studio with live chat, and a robust commenting system with nested replies and interactive timestamps.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # ViewTube Full-Stack Application (Frontend SPA + Express Backend API)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: viewtube-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=postgresql://viewtube_user:viewtube_pass@db:5432/viewtube_db
+      - JWT_SECRET=production_jwt_secret_change_me
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # PostgreSQL Relational Database Service
+  db:
+    image: postgres:16-alpine
+    container_name: viewtube-db
+    environment:
+      POSTGRES_USER: viewtube_user
+      POSTGRES_PASSWORD: viewtube_pass
+      POSTGRES_DB: viewtube_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema/schema.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
